@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+body{
+     background-color: #02475E;
+}
+header{
+    margin-bottom: 1rem;
+}
+
+h1{
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+.mainInicio{
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: aquamarine;
+    border: 5px solid black;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+ 
+}
+
+
+h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5% solid black;
+    border-radius: 10px;
+}
+
+    
+h3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5% solid rgb(9, 10, 9);
+    border-radius: 10px;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    }
+
+nav ul li{
+    background-color: #687980 ;
+    border-radius: 1rem;
+    padding: 0.3rem;
+
+}
+
+.rutina{
+    font-size: 1.5rem;
+    text-align:center;
+    background-color: aquamarine;
+    /* border: 5px solid black; */
+    margin: 10px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:    "rutina1" 
+                            "rutina2";
+
+    
+}
+.rutinaok{
+    padding-left: 20px ;
+    padding-right: 20px ;
+    grid-area: "rutina";
+    border: 5px black;
+}
+
+@media (max-width: 480px){
+    .rutina{
+        background-color:rgb(76, 97, 212);
+        grid-template-columns: 1fr;          
+    }
+
+    .rutinaok{
+        padding: 0px;
+    }
+}
+
+ .colorAzul{
+     color: blue;
+ }
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.caja{
+    background-color: rebeccapurple;
+    width: 70%;
+    margin: 50px 50px 70px 70px;
+    padding: 20px 70px 20px 70px;
+    border: 10px solid black;    
+    border-radius: 10px;
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    display: grid;
+    
+}
+
+.imagen{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "imagen";
+    margin: 5px;
+    padding: 5px; 
+                            
+}
+@media (max-width: 480px){
+    .imagen{
+        background-color:rgb(207, 76, 212);
+        grid-template-columns: 1fr;
+            }      
+}
+.item-relative{
+    position: relative;
+    top: 0px;
+    left: 10px;
+    width: 100%;
+}
+.item-relative{
+    position:sticky;
+    top: 90px;
+    left: 80px;
+    
+}
+.item-fixed{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 80px;
+    width: 80px;
+}
+
+footer h4{
+    text-align: center;
+}
+
+.padre{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    display: grid;
+    height: 40vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.4fr 0.3fr 0.3fr 0.3fr;
+    grid-template-areas:    "sucursales" 
+                            "dias" 
+                            "horarios";
+    gap: 5px;
+    
+}
+
+.table1{
+    background-color: aqua;
+    font-size: 1.5rem;
+    padding: 5%;
+}
+
+.table2{
+    background-color: #687980;
+    font-size: 1.3rem;
+    padding: 5%;
+}
+.table3{
+    background-color:azure;
+    font-size: 1.3rem;
+    padding: 5%;
+}
+.table4{
+    background-color:blanchedalmond;
+    font-size: 1.3rem;
+    padding: 5%;
+}
+.crossfit{
+    height: 600px;
+    display: grid;
+    grid-template-columns:(1, 3fr) ;
+    grid-template-rows:(1, 3fr);
+    justify-items: center;
+    align-items: center;
+}
+@media (max-width: 480px){
+    .crossfit{
+        grid-template-columns: (1, 1fr);
+        padding: 10px;
+        margin: 10;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
